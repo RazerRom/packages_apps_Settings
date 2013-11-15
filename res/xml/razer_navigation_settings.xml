@@ -27,12 +27,12 @@
         android:icon="@drawable/ic_settings_buttons" />
 
     <!-- Custom Navbar -->
-    <PreferenceScreen
-        android:key="navbar"
-        android:title="@string/razer_navbar_title"
-        android:fragment="com.android.settings.razer.NavBarSettings"
-        android:icon="@drawable/ic_navbar_layout"
-        settings:advanced="true" />
+     <PreferenceScreen
+         android:key="navbar"
+         android:title="@string/razer_navbar_title"
+         android:fragment="com.android.settings.razer.NavbarSettings"
+         android:icon="@drawable/ic_navbar_layout"
+         settings:advanced="true" />
 
     <!-- App circle bar -->
     <PreferenceScreen
@@ -57,13 +57,6 @@
         android:title="@string/gesture_anywhere_title"
         android:icon="@drawable/ic_settings_gestures"
         settings:advanced="true" />
-
-    <!-- Navigation Ring -->
-    <PreferenceScreen
-        android:key="navigation_bar_ring"
-        android:fragment="com.android.settings.cyanogenmod.NavRing"
-        android:title="@string/navigation_ring_title"
-        android:icon="@drawable/ic_nav_ring" />
 
     <PreferenceScreen
         android:key="pie_settings"
