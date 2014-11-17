@@ -1145,6 +1145,14 @@ sword is entered</string>
     <string name="battery_status_circle_dot_length_title">Circle dot length</string>
     <string name="battery_status_circle_dot_interval_title">Circle dot interval</string>
     <string name="battery_status_battery_color_title">Fill</string>
-    <string name="battery_status_text_color_title">Text</string>    
+    <string name="battery_status_text_color_title">Text</string>
+
+    <!-- Expanded Desktop -->
+    <string name="power_menu_expanded_desktop">Expanded desktop</string>
+    <string name="expanded_hide_nothing">Hide nothing</string>
+    <string name="expanded_hide_status">Hide statusbar</string>
+    <string name="expanded_hide_navigation">Hide navigation</string>
+    <string name="expanded_hide_both">Hide both</string>
+    <string name="expanded_nothing_to_show">Nothing to show</string>
 
 </resources>
