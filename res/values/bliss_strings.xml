@@ -1178,7 +1178,7 @@
     <string name="trigger_bottom_title">Trigger height</string>
     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
 
-    <!-- TRDS 5.0 -->	
+    <!-- TRDS 5.0 -->
     <string name="theme_settings_title">Dark Bliss</string>
     <string name="theme_auto_mode_title">Switch theme</string>
     <string name="theme_auto_mode_off">Manual</string>
@@ -1262,5 +1262,9 @@
     <string name="nfc_polling_mode_screen_off">Screen off</string>
     <string name="nfc_polling_mode_screen_locked">Screen on, locked</string>
     <string name="nfc_polling_mode_screen_unlocked">Screen on, unlocked (default)</string>
+
+    <!-- Instant reboot -->
+    <string name="advanced_reboot_oneclick">One click reboot</string>
+    <string name="advanced_reboot_oneclick_summary">Instantly trigger reboot action</string>
 
 </resources>
