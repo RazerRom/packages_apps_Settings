@@ -88,6 +88,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_MOD_BUILD_TYPE = "build_type";
     private static final String KEY_BLISS_SHARE = "share";
+    private static final String KEY_UBER_AND = "uber_android";
+    private static final String KEY_UBER_KERNEL = "uber_kernel";
+    private static final String KEY_UBER_FLAGS = "uber_flags";
     private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_BUILD_VERSION = "mod_build_version";
     private static final String KEY_CM_LICENSE = "cmlicense";
@@ -120,6 +123,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_MOD_BUILD_TYPE, "ro.bliss.display.buildtype");
         findPreference(KEY_MOD_BUILD_TYPE).setEnabled(true);
         findPreference(KEY_BUILD_VERSION).setEnabled(true);
+        findPreference(KEY_UBER_KERNEL).setEnabled(true);
+        findPreference(KEY_UBER_FLAGS).setEnabled(true);
+        setValueSummary(KEY_UBER_AND, "ro.uber.android");
+        setValueSummary(KEY_UBER_KERNEL, "ro.uber.kernel");
+        setValueSummary(KEY_UBER_FLAGS, "ro.uber.flags");
         setValueSummary(KEY_MOD_VERSION, "ro.modversion");
         setValueSummary(KEY_BUILD_VERSION, "ro.bliss.version");
 
