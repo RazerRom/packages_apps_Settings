@@ -19,11 +19,11 @@
     <string name="lsextrainfo">Extra information</string>
     <string name="lsextrainfo_summary">Display extra info for cpu, display, etc</string>
 
-    <!-- Share BlissPop -->
-    <string name="share_bliss_title">Share BlissPop</string>
-    <string name="share_bliss_summary">Let others know about BlissPop</string>
-    <string name="share_message">Check out what #BlissPop is all about @ http://www.blissroms.com</string>
-    <string name="share_chooser_title">Share BlissPop</string>
+    <!-- Share BlissPopGM -->
+    <string name="share_bliss_title">Share BlissPopGM</string>
+    <string name="share_bliss_summary">Let others know about BlissPopGM</string>
+    <string name="share_message">Check out what #BlissPopGM is all about @ http://www.blissroms.com</string>
+    <string name="share_chooser_title">Share BlissPopGM</string>
     
     <!-- Text for disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Diable Immersive Mode Messages</string>
