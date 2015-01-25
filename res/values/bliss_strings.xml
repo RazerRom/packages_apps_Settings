@@ -122,7 +122,7 @@
     <string name="add">Add</string>
     <string name="help">Help</string>
     <string name="reset_android">Android</string>
-    <string name="reset_bliss">Bliss</string>
+    <string name="reset_bliss">BlissGM</string>
     <string name="attention">Attention</string>
     <string name="enabled">Enabled</string>
     <string name="default_string">Default</string>
@@ -133,11 +133,11 @@
     <string name="icons_title">Icons</string>
     <string name="text_title">Text</string>
     <string name="reset_message">Reset all entries to default?</string>
-    <string name="reset_option_message">Reset values to\nAndroid- or Bliss default?</string>
+    <string name="reset_option_message">Reset values to\nAndroid- or BlissGM default?</string>
     <string name="category_general_title">General options</string>
-    <string name="dlg_reset_values_message">Reset values to\nAndroid- or Bliss default?</string>
+    <string name="dlg_reset_values_message">Reset values to\nAndroid- or BlissGM default?</string>
     <string name="dlg_reset_android">Android</string>
-    <string name="dlg_reset_bliss">Bliss</string>          
+    <string name="dlg_reset_bliss">BlissGM</string>          
     
     <!-- Sound settings -->
     <string name="advanced_sound_title">Advanced options</string>
@@ -230,7 +230,7 @@
     
     <!-- Bliss settings screens -->
     <string name="header_category_personalization">Personalization</string>
-    <string name="interface_settings_title">Interface</string>
+    <string name="interface_settings_title">BlissGM Interface</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color picker</string>
