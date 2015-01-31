@@ -97,8 +97,6 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
     private static final int MENU_REMOVE = Menu.FIRST;
     private static final int MENU_FILL_PROFILE = Menu.FIRST + 1;
 
-
-
     Profile mProfile;
     ItemListAdapter mAdapter;
     ProfileManager mProfileManager;
