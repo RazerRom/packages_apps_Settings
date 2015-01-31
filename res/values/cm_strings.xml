@@ -289,6 +289,7 @@
 
     <!--- Tap To Wake -->
     <string name="double_tap_to_wake_title">Double-tap to wake</string>
+    <string name="double_tap_to_wake_summary">Double-tap on the screen to turn on the display</string>
 
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Prevent accidental wake-up</string>
@@ -343,7 +344,7 @@
 
     <!-- tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
 
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>
