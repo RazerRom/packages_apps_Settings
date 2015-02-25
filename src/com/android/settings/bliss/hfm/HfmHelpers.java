@@ -88,7 +88,7 @@ public final class HfmHelpers {
         String line;
         BufferedReader rd1 = getBufferedReader(hosts);
         line = rd1.readLine();
-        if (line.contains("#BlissPop")) {
+        if (line.contains("#BlissPopGM")) {
             ret = true;
         }
         return ret;

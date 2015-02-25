@@ -2152,7 +2152,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Bliss Extras -->
+        <!-- BlissGM Extras -->
         <activity android:name="com.android.settings.bliss.extrainfo.MainActivity"
                   android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
             <intent-filter>

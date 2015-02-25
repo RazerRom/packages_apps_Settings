@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 The LiquidSmooth Project
+<!-- Copyright (C) 2015 The BlissPopGM Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,15 +15,15 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-<!-- Bliss Extra Info -->
+<!-- BlissGM Extra Info -->
 <string name="lsextrainfo">Дополнительная информация</string>
 <string name="lsextrainfo_summary">Информация о процессоре, дисплее и т.д.</string>
 
-<!-- Share BlissPop -->
-<string name="share_bliss_title">Рассказать о BlissPop</string>
-<string name="share_bliss_summary">Расскажите вашим друзьям о BlissPop</string>
-<string name="share_message">Посмотрите, что такое BlissPop! Вся информация здесь: http://www.blissroms.com</string>
-<string name="share_chooser_title">Рассказать о BlissPop</string>
+<!-- Share BlissPopGM -->
+<string name="share_bliss_title">Рассказать о BlissPopGM</string>
+<string name="share_bliss_summary">Расскажите вашим друзьям о BlissPopGM</string>
+<string name="share_message">Посмотрите, что такое BlissPopGM! Вся информация здесь: http://www.blissroms.com</string>
+<string name="share_chooser_title">Рассказать о BlissPopGM</string>
 
 <!-- Text for disabling immersive mode messages -->
 <string name="disable_immersive_message_title">Отключить сообщения полноэкранного режима</string>
@@ -121,7 +121,7 @@
 <string name="add">Добавить</string>
 <string name="help">Помощь</string>
 <string name="reset_android">Android</string>
-<string name="reset_bliss">Bliss</string>
+<string name="reset_bliss">BlissGM</string>
 <string name="attention">Внимание</string>
 <string name="enabled">Включено</string>
 <string name="default_string">Стандарт</string>
@@ -134,9 +134,9 @@
 <string name="reset_message">Сбросить все записи?</string>
 <string name="reset_option_message">Сброс значения \ nAndroid- или Fusion по умолчанию?</string>
 <string name="category_general_title">Общие настройки</string>
-<string name="dlg_reset_values_message">Сброс значения \ nAndroid- или Bliss по умолчанию?</string>
+<string name="dlg_reset_values_message">Сброс значения \ nAndroid- или BlissGM по умолчанию?</string>
 <string name="dlg_reset_android">Android</string>
-<string name="dlg_reset_bliss">Bliss</string>          
+<string name="dlg_reset_bliss">BlissGM</string>          
 
 <!-- Sound settings -->
 <string name="advanced_sound_title">Дополнительные настройки</string>
@@ -227,7 +227,7 @@
 <string name="network_traffic_color_reset_message">Сбросить цвет скорости соединения?</string>
 
 
-<!-- Bliss settings screens -->
+<!-- BlissGM settings screens -->
 <string name="header_category_personalization">Персонализация</string>
 <string name="interface_settings_title">Интерфейс</string>
 <!-- Color Picker -->
@@ -728,21 +728,21 @@
 <!-- Bluetooth accept all Filestypes -->
 <string name="bluetooth_accept_all_files">Принимать все типы файлов</string>
 <!-- Download Center -->
-<string name="download_category">Загрузки Bliss</string>
+<string name="download_category">Загрузки BlissGM</string>
 <string name="download_category_summary">Загрузка прошивок, ядер и т.д.</string>
 <string name="rom_category">Загрузить ROM</string>
 <string name="gapps_category">Пакеты GAPPS</string>
 <string name="kernels_category">Загрузка ядер</string>
 <string name="addons_category">Различные дополнения</string>
-<string name="bliss_official_title">Официальные сборки BlissPop</string>
-<string name="bliss_official_summary">Ссылка на официальные сборки BlissPop</string>
-<string name="bliss_nightly_title">Ночные сборки BlissPop</string>
-<string name="bliss_nightly_summary">Ссылка на ночные сборки BlissPop</string>
+<string name="bliss_official_title">Официальные сборки BlissPopGM</string>
+<string name="bliss_official_summary">Ссылка на официальные сборки BlissPopGM</string>
+<string name="bliss_nightly_title">Ночные сборки BlissPopGM</string>
+<string name="bliss_nightly_summary">Ссылка на ночные сборки BlissPopGM</string>
 <string name="banksgapps_title">Banks Gapps</string>
-<string name="banksgapps_summary">Пакет Banks Gapps крайне рекомендуется для использования с BlissPop</string>
+<string name="banksgapps_summary">Пакет Banks Gapps крайне рекомендуется для использования с BlissPopGM</string>
 <string name="pagapps_title">PA Gapps</string>
 <string name="pagapps_summary">Полностью готовые для установки пакеты Gapps, обычно используются пользователями, которые не хотят загружать и устанавливать приложения позже</string>
-<string name="kernels_title">Ядра Bliss</string>
+<string name="kernels_title">Ядра BlissGM</string>
 <string name="kernels_summary">Различные ядра для устройств, поддерживаемых Team Bliss</string>
 <string name="addons_title">Различные аддоны</string>
 <string name="addons_summary">Модификации звуков, сплэш-экраны, и т.д.</string>

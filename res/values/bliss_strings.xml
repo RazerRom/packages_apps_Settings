@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 The LiquidSmooth Project
+<!-- Copyright (C) 2015 The BlissPopGM Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Bliss Extra Info -->
+    <!-- BlissGM Extra Info -->
     <string name="lsextrainfo">Extra information</string>
     <string name="lsextrainfo_summary">Display extra info for cpu, display, etc</string>
 
@@ -231,7 +231,7 @@
     <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
 
     
-    <!-- Bliss settings screens -->
+    <!-- BlissGM settings screens -->
     <string name="header_category_personalization">Personalization</string>
     <string name="interface_settings_title">BlissGM Interface</string>
 

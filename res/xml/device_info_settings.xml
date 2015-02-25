@@ -22,7 +22,7 @@
                           android:layout="@layout/bliss_logo_row" 
                           android:selectable="false" />
 
-        <!-- Bliss Extra Info -->
+        <!-- BlissGM Extra Info -->
         <PreferenceScreen android:key="extrainfo"
                 android:title="@string/lsextrainfo"
                 android:summary="@string/lsextrainfo_summary">
@@ -32,7 +32,7 @@
         </PreferenceScreen>
 	
 
-        <!-- Bliss Share -->
+        <!-- BlissGM Share -->
         <Preference
             android:key="share"
             android:title="@string/share_bliss_title"
