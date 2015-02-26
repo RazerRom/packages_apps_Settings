@@ -83,6 +83,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_MOD_BUILD_TYPE = "build_type";
     private static final String KEY_BLISS_SHARE = "share";
+    public static final String KEY_ADVANCED_MODE = "advanced_mode";
+
+    SecureSettingSwitchPreference mAdvancedSettings;
 
     long[] mHits = new long[3];
 
@@ -162,6 +165,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 getPreferenceScreen().removePreference(pref);
             }
         }
+        mAdvancedSettings = (SecureSettingSwitchPreference) findPreference(KEY_ADVANCED_MODE);
     }
 
     @Override
