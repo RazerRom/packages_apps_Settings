@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2015 The CyanogenMod Project
+<!--    Copyright (C) 2015 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,13 +16,13 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-                  android:title="@string/sound_settings"
-                  android:key="sound_settings"
-                  settings:keywords="@string/keywords_sounds_and_notifications">
+        android:title="@string/sound_settings"
+        android:key="sound_settings"
+        settings:keywords="@string/keywords_sounds_and_notifications">
 
-            android:key="volumes"
-            android:title="@string/category_volume" >
-	   
+    <PreferenceCategory
+        android:key="volumes"
+        android:title="@string/category_volume" >
         
         <!-- Link Volume Notification -->
         <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
@@ -57,24 +56,17 @@
 
         <!-- Live volume steps -->
         <PreferenceScreen
-                android:key="volume_steps_settings"
+                android:key="volume_steps"
                 android:fragment="com.android.settings.bliss.VolumeSteps"
                 android:title="@string/volume_steps_title" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="panel_time_out"
-        android:title="@string/category_panel_time_out"
-        settings:advanced="true">
                 
         <!-- Volume panel timeout -->
         <ListPreference
-            android:key="volume_panel_time_out"
-            android:title="@string/volume_panel_time_out_title"
-            android:entries="@array/volume_panel_time_out_entries"
-            android:entryValues="@array/volume_panel_time_out_values"
-            android:persistent="false" />
+               android:key="volume_panel_time_out"
+               android:title="@string/volume_panel_time_out_title"
+               android:entries="@array/volume_panel_time_out_entries"
+               android:entryValues="@array/volume_panel_time_out_values"
+               android:persistent="false" />
 
     </PreferenceCategory>
 
