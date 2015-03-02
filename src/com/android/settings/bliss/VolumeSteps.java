@@ -38,6 +38,7 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
     private static final String KEY_VOLUME_STEPS_ALARM = "volume_steps_alarm";
     private static final String KEY_VOLUME_STEPS_DTMF = "volume_steps_dtmf";
     private static final String KEY_VOLUME_STEPS_MUSIC = "volume_steps_music";
+    private static final String KEY_VOLUME_STEPS_SETTINGS = "volume_steps_settings";
     private static final String KEY_VOLUME_STEPS_NOTIFICATION = "volume_steps_notification";
     private static final String KEY_VOLUME_STEPS_RING = "volume_steps_ring";
     private static final String KEY_VOLUME_STEPS_SYSTEM = "volume_steps_system";
@@ -48,6 +49,7 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
     private ListPreference mVolumeStepsAlarm;
     private ListPreference mVolumeStepsDTMF;
     private ListPreference mVolumeStepsMusic;
+    private ListPreference mVolumestepsSettings;
     private ListPreference mVolumeStepsNotification;
     private ListPreference mVolumeStepsRing;
     private ListPreference mVolumeStepsSystem;
@@ -81,6 +83,10 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
         mVolumeStepsMusic = (ListPreference) findPreference(KEY_VOLUME_STEPS_MUSIC);
         updateVolumeSteps(mVolumeStepsMusic.getKey(), mAudioManager.getStreamMaxVolume(mAudioManager.STREAM_MUSIC));
         mVolumeStepsMusic.setOnPreferenceChangeListener(this);
+        
+         mVolumeStepsMusic = (ListPreference) findPreference(KEY_VOLUME_STEPS_SETTINGS);
+        updateVolumeSteps(mVolumeStepsSettings.getKey(), mAudioManager.getStreamMaxVolume(mAudioManager.STREAM_SETTINGS));
+        mVolumeStepsSettings.setOnPreferenceChangeListener(this);
 
         mVolumeStepsNotification = (ListPreference) findPreference(KEY_VOLUME_STEPS_NOTIFICATION);
         updateVolumeSteps(mVolumeStepsNotification.getKey(), mAudioManager.getStreamMaxVolume(mAudioManager.STREAM_NOTIFICATION));
@@ -114,6 +120,8 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
         } else if (preference == mVolumeStepsMusic) {
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
+        } else if (preference == mVolumeStepsSettings) {
+            updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
         } else if (preference == mVolumeStepsNotification) {
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
         } else if (preference == mVolumeStepsRing) {
@@ -140,6 +148,8 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
                 streamType = mAudioManager.STREAM_DTMF;
         else if (settingsKey.equals(KEY_VOLUME_STEPS_MUSIC))
                 streamType = mAudioManager.STREAM_MUSIC;
+        else if (settingsKey.equals(KEY_VOLUME_STEPS_SETTINGS))
+                streamType = mAudioManager.STREAM_SETTINGS;
         else if (settingsKey.equals(KEY_VOLUME_STEPS_NOTIFICATION))
                 streamType = mAudioManager.STREAM_NOTIFICATION;
         else if (settingsKey.equals(KEY_VOLUME_STEPS_RING))
