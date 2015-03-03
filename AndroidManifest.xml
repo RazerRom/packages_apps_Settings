@@ -2384,7 +2384,6 @@
 
         <activity android:name=".bliss.gestureanywhere.GestureAnywhereBuilderActivity" />
         <activity android:name=".bliss.gestureanywhere.GestureAnywhereCreateGestureActivity" />
-        <activity android:name=".bliss.ChangeLog" android:label="@string/changelog_title">
            <intent-filter>
                <action android:name="android.intent.action.MAIN"/>
            </intent-filter>
