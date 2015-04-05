@@ -2176,16 +2176,13 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="com.android.settings.SHORTCUT"/>
             </intent-filter>
-        </activity>		
+        </activity>
 
         <activity android:name=".bliss.ChangeLog" android:label="@string/changelog_title">
            <intent-filter>
                <action android:name="android.intent.action.MAIN"/>
            </intent-filter>
-        </activity>            
-        
-        <!-- Device Control Activity -->
-        <activity android:name="org.namelessrom.devicecontrol.MainActivity"/>
+        </activity>
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
