@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The Android Open Source Project
+ * Copyright (C) 2015 The BlissRom Project.
  *
  * Class based on SlimRoms (A big thanks to the Team)
  *

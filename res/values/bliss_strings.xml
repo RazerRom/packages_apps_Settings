@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 The LiquidSmooth Project
+<!-- Copyright (C) 2015 The BlissRom Project.
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,19 +15,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Bliss settings screens -->
+    <!-- BlissRom settings screens -->
     <string name="header_category_personalization">Personalization</string>
-    <string name="interface_settings_title">Bliss Interface</string>
+    <string name="interface_settings_title">BlissRom Interface</string>
 
-    <!-- Bliss Extra Info -->
+    <!-- BlissRom Extra Info -->
     <string name="lsextrainfo">Extra information</string>
     <string name="lsextrainfo_summary">Display extra info for cpu, display, etc</string>
 
-    <!-- Share BlissPop -->
-    <string name="share_bliss_title">Share BlissPop</string>
-    <string name="share_bliss_summary">Let others know about BlissPop</string>
-    <string name="share_message">Check out what #BlissPop is all about @ http://www.blissroms.com</string>
-    <string name="share_chooser_title">Share BlissPop</string>
+    <!-- Share BlissRom -->
+    <string name="share_bliss_title">Share BlissRom</string>
+    <string name="share_bliss_summary">Let others know about BlissRom</string>
+    <string name="share_message">Check out what #BlissRom is all about @ http://www.blissroms.com</string>
+    <string name="share_chooser_title">Share BlissRom</string>
 
     <!-- General strings -->
     <string name="attention">Attention</string>
@@ -47,9 +47,9 @@
     <string name="changelog_version">Version</string>
 
     <!-- GCC version info -->
-    <string name="sm_android">Gcc android</string>
+    <string name="sm_android">GCC Android</string>
     <string name="sm_android_default">Unknown</string>
-    <string name="sm_kernel">Gcc kernel</string>
+    <string name="sm_kernel">GCC kernel</string>
     <string name="sm_kernel_default">Unknown</string>
 
     <!-- GCC build flags info -->
@@ -59,15 +59,15 @@
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string> 
 
-    <!-- About phone screen, Bliss version -->
-    <string name="mod_version">Bliss version</string>
+    <!-- About phone screen, BlissRom version -->
+    <string name="mod_version">BlissRom version</string>
     <string name="mod_version_default">Unknown</string>
     
-    <!--Embedded AudioFX-->
+    <!-- Embedded AudioFX -->
     <string name="audiofx_settings_title">Equalizer</string>
     <string name="audiofx_summary">AudioFX Access</string>
     
-    <!--Embedded Viper4Android-->
+    <!-- Embedded Viper4Android -->
     <string name="viper_settings_title">Equalizer</string>
     <string name="viper_summary">Viper4Android Access</string> 
     
@@ -138,7 +138,6 @@
     <string name="shortcut_action_help_main">To add a %1$s, select the Add icon. Once a %1$s is added, selecting the row will change the target%2$s\n\nTo remove a %1$s, swipe the row horizontally left or right. Re-order a %1$s in the list by vertically dragging the anchor on the left.\n\nTo clear or reset to defaults, select the Reset icon.</string>
     <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
     <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Removing every %1$s in the list will disable the second pie layer entirely.</string>
-
 
     <string name="shortcuts_applications">Applications</string>
     <string name="shortcuts_select_custom_app_title">Select custom application</string>

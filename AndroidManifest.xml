@@ -2160,7 +2160,7 @@
 
         <activity android:name=".cyanogenmod.PerformanceSettings" />
 
-        <!-- Bliss Extras -->
+        <!-- BlissRom Extras -->
         <activity android:name="com.android.settings.bliss.extrainfo.MainActivity"
                   android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
             <intent-filter>

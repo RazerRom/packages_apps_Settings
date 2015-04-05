@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2014 VanirAOSP && the Android Open Source Project
+ *  Copyright (C) 2015 The BlissRom Project.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

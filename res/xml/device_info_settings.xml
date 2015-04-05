@@ -21,7 +21,7 @@
                           android:enabled="false"
                           android:layout="@layout/bliss_logo_row" />
 
-        <!-- Bliss Extra Info -->
+        <!-- BlissRom Extra Info -->
         <PreferenceScreen android:key="extrainfo"
                 android:title="@string/lsextrainfo"
                 android:summary="@string/lsextrainfo_summary">
@@ -30,7 +30,7 @@
                     android:targetClass="com.android.settings.bliss.extrainfo.MainActivity" />
         </PreferenceScreen>
 
-        <!-- Bliss Share -->
+        <!-- BlissRom Share -->
         <Preference
             android:key="share"
             android:title="@string/share_bliss_title"
@@ -142,7 +142,7 @@
                 android:title="@string/fcc_equipment_id"
                 android:summary="@string/device_info_default"/>
 
-        <!-- Bliss Version -->
+        <!-- BlissRom Version -->
         <Preference android:key="mod_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/mod_version"
