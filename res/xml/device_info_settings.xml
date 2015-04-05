@@ -42,16 +42,6 @@
            <intent android:action="android.intent.action.MAIN"
                   android:targetPackage="com.android.settings"
                   android:targetClass="com.android.settings.bliss.ChangeLog" />
-        </PreferenceScreen>
-
-        <!-- Device Control -->
-        <PreferenceScreen 
-            android:id="@+id/bliss_ota"
-            android:title="@string/bliss_ota">
-                <intent
-                    android:action="android.intent.action.MAIN"
-    		        android:targetPackage="com.chummy.blissroms.updates"
-                    android:targetClass="com.chummy.blissroms.updates.activities.MainActivity" />
         </PreferenceScreen>	 
 
         <!-- Advanced mode -->
