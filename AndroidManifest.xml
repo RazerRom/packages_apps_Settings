@@ -2182,6 +2182,8 @@
                <action android:name="android.intent.action.MAIN"/>
            </intent-filter>
         </activity>
+        
+        <activity android:name="com.grarak.kerneladiutor.MainActivity" />
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
