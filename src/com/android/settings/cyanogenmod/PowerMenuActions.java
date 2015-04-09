@@ -54,7 +54,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
     final static String TAG = "PowerMenuActions";
 
-    private static final String KEY_SCREENSHOT_DELAY = "screenshot_delay";    
+    private static final String SCREENSHOT_DELAY = "screenshot_delay";
+
     private SwitchPreference mPowerPref;
     private SwitchPreference mRebootPref;
     private SwitchPreference mScreenshotPref;
