@@ -75,6 +75,7 @@
 
     <!-- About phone screen, BlissRom version -->
     <string name="mod_version">BlissRom version</string>
+    <string name="mod_build_version">BlissRom build</string>
     <string name="mod_version_default">Unknown</string>
     
     <!-- Embedded AudioFX -->
