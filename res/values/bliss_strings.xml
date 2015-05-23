@@ -470,9 +470,6 @@
     <string name="recents_show_searchbar">Show search bar in recents</string>
     <string name="recents_show_searchbar_summary">Enable or disable the Google search bar in the recents menu</string>
 
-    <!-- Device specific settings -->
-    <string name="screen_off_gesture_settings_title">Screen off gestures</string>
-
     <!-- Navigation bar button color -->
     <string name="navbar_button_tint_title">Navigation button tint</string>
 
