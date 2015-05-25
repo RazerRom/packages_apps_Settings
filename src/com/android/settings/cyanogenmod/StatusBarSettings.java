@@ -39,6 +39,7 @@ import android.widget.EditText;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.util.Helpers;
 import com.android.settings.widget.SeekBarPreferenceCham;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -58,10 +59,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String KEY_STATUS_BAR_GREETING = "status_bar_greeting";
     private static final String KEY_STATUS_BAR_GREETING_TIMEOUT = "status_bar_greeting_timeout";
     private static final String KEY_CARRIERLABEL_PREFERENCE = "carrier_options";
+    private static final String SHOW_FOURG = "show_fourg";
 
     private ColorPickerPreference mBlissLogoColor;
     private SwitchPreference mStatusBarGreeting;
     private SeekBarPreferenceCham mStatusBarGreetingTimeout;
+    private SwitchPreference mShowFourG;
 
     private String mCustomGreetingText = "";
 
@@ -113,6 +116,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             prefSet.removePreference(mCarrierLabel);
         }
 
+        //  4G LTE switch
+        mShowFourG = (SwitchPreference) prefSet.findPreference(SHOW_FOURG);
+        if (Utils.isWifiOnly(getActivity())) {
+            prefSet.removePreference(mShowFourG);
+        } else {
+            mShowFourG.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.SHOW_FOURG, 0) == 1));
+        }
     }
 
     @Override
@@ -181,6 +192,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 Settings.System.putString(getActivity().getContentResolver(),
                         Settings.System.STATUS_BAR_GREETING, "");
             }
+        } else if  (preference == mShowFourG) {
+            boolean enabled = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SHOW_FOURG, enabled ? 1:0);
+            Helpers.restartSystemUI();
+            return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }

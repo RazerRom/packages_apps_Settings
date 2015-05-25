@@ -1329,4 +1329,8 @@
     <string name="group_applications">Applications</string>
     <string name="select_custom_app_title">Select custom application</string>
 
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Show 4G instead of LTE</string>
+    <string name="show_fourg_summary">Replaces LTE statusbar indicator with 4G.\nChanging this option will trigger SystemUI restart!</string>
+
 </resources>
