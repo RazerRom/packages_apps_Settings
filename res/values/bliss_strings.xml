@@ -62,16 +62,6 @@
     <string name="changelog_bliss_title">Changelog</string>
     <string name="changelog_bliss_error">Unable to load changelog</string>
 
-    <!-- UBER GCC version info -->
-    <string name="uber_android">GCC android</string>
-    <string name="uber_android_default">Unknown</string>
-    <string name="uber_kernel">GCC kernel</string>
-    <string name="uber_kernel_default">Unknown</string>
-
-    <!-- UBER GCC build flags info -->
-    <string name="uber_flags">Optimizations</string>
-    <string name="uber_flags_default">None</string>
-
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string> 
 
