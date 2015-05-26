@@ -88,6 +88,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_MOD_BUILD_TYPE = "build_type";
     private static final String KEY_BLISS_SHARE = "share";
+    private static final String KEY_SM_AND = "sm_android";
+    private static final String KEY_SM_KERNEL = "sm_kernel";
+    private static final String KEY_SM_FLAGS = "sm_flags";
     private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_BUILD_VERSION = "mod_build_version";
     private static final String KEY_CM_LICENSE = "cmlicense";
@@ -120,6 +123,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_MOD_BUILD_TYPE, "ro.bliss.display.buildtype");
         findPreference(KEY_MOD_BUILD_TYPE).setEnabled(true);
         findPreference(KEY_BUILD_VERSION).setEnabled(true);
+        findPreference(KEY_SM_AND).setEnabled(true);
+        findPreference(KEY_SM_KERNEL).setEnabled(true);
+        findPreference(KEY_SM_FLAGS).setEnabled(true);
+        setValueSummary(KEY_SM_AND, "ro.sm.android");
+        setValueSummary(KEY_SM_KERNEL, "ro.sm.kernel");
+        setValueSummary(KEY_SM_FLAGS, "ro.sm.flags");
         setValueSummary(KEY_MOD_VERSION, "ro.modversion");
         setValueSummary(KEY_BUILD_VERSION, "ro.bliss.version");
 
