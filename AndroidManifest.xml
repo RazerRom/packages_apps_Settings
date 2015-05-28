@@ -77,7 +77,7 @@
         android:name="cyanogenmod.permission.PROTECTED_APP"
         android:protectionLevel="signatureOrSystem" />
 
-    <!-- Bliss feature permissions -->
+    <!-- Razer feature permissions -->
     <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO"/>
 
     <application android:label="@string/settings_label"
@@ -159,7 +159,7 @@
         </activity>
 
         <activity
-            android:name=".bliss.SlimActionShortcut"
+            android:name=".razer.SlimActionShortcut"
             android:theme="@android:style/Theme.NoDisplay"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance" >
@@ -1999,7 +1999,7 @@
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.bliss.NavBar" />
+                       android:value="com.android.settings.razer.NavBar" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/security_settings" />
         </activity-alias>
@@ -2013,7 +2013,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.bliss.ambientdisplay.AmbientSettings" />
+                android:value="com.android.settings.razer.ambientdisplay.AmbientSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/display_and_lights_settings" />
         </activity>
@@ -2028,19 +2028,19 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.bliss.AppCircleBar" />
+                android:value="com.android.settings.razer.AppCircleBar" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/security_settings" />
         </activity>
 
-        <activity-alias android:name="com.android.settings.bliss.AppCircleBar"
+        <activity-alias android:name="com.android.settings.razer.AppCircleBar"
                 android:taskAffinity="com.android.settings"
                 android:label="@string/app_circle_bar_title"
                 android:targetActivity="Settings$AppCircleBarActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.bliss.AppCircleBar" />
+                       android:value="com.android.settings.razer.AppCircleBar" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/security_settings" />
         </activity-alias>
@@ -2054,7 +2054,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.bliss.AppSidebar" />
+                android:value="com.android.settings.razer.AppSidebar" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/display_and_lights_settings" />
         </activity>
@@ -2069,19 +2069,19 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.bliss.gestureanywhere.GestureAnywhereSettings" />
+                android:value="com.android.settings.razer.gestureanywhere.GestureAnywhereSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/security_settings" />
         </activity>
 
-        <activity-alias android:name="com.android.settings.bliss.gestureanywhere.GestureAnywhereSettings"
+        <activity-alias android:name="com.android.settings.razer.gestureanywhere.GestureAnywhereSettings"
                 android:taskAffinity="com.android.settings"
                 android:label="@string/gesture_anywhere_title"
                 android:targetActivity="Settings$GestureActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.bliss.gestureanywhere.GestureAnywhereSettings" />
+                       android:value="com.android.settings.razer.gestureanywhere.GestureAnywhereSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/security_settings" />
         </activity-alias>
@@ -2096,19 +2096,19 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.bliss.HeadsUpSettings" />
+                android:value="com.android.settings.razer.HeadsUpSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/security_settings" />
         </activity>
 
-        <activity-alias android:name=".bliss.HeadsUpSettings"
+        <activity-alias android:name=".razer.HeadsUpSettings"
                 android:taskAffinity="com.android.settings"
                 android:label="@string/category_heads_up"
                 android:targetActivity="Settings$HeadsUpSettingsActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.bliss.HeadsUpSettings" />
+                       android:value="com.android.settings.razer.HeadsUpSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                        android:resource="@id/security_settings" />
         </activity-alias>
@@ -2417,8 +2417,8 @@
 
         <activity android:name=".cyanogenmod.PerformanceSettings" />
 
-        <!-- BlissRom Extras -->
-        <activity android:name="com.android.settings.bliss.extrainfo.MainActivity"
+        <!-- Razer Extras -->
+        <activity android:name="com.android.settings.razer.extrainfo.MainActivity"
                   android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2436,8 +2436,8 @@
         </activity>
 
 		<!-- Gesture Anywhere -->
-        <activity android:name=".bliss.gestureanywhere.GestureAnywhereBuilderActivity" />
-        <activity android:name=".bliss.gestureanywhere.GestureAnywhereCreateGestureActivity" />
+        <activity android:name=".razer.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name=".razer.gestureanywhere.GestureAnywhereCreateGestureActivity" />
 
 		<!-- Kernel Adiutor -->
         <activity android:name="com.grarak.kerneladiutor.MainActivity" />
@@ -2490,31 +2490,31 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.android.settings.bliss.hfm.IntentReceiver" >
+        <receiver android:name="com.android.settings.razer.hfm.IntentReceiver" >
             <intent-filter>
                  <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
 
-        <service android:name="com.android.settings.bliss.hfm.CheckHosts" />
+        <service android:name="com.android.settings.razer.hfm.CheckHosts" />
 
-        <activity android:name="com.android.settings.bliss.hfm.HfmWhitelist"
+        <activity android:name="com.android.settings.razer.hfm.HfmWhitelist"
                   android:label="@string/hfm_whitelist_title"
                   android:taskAffinity="" />
         
-        <service android:name=".bliss.identicons.IdenticonCreationService"
+        <service android:name=".razer.identicons.IdenticonCreationService"
                  android:exported="false" />
 
-        <service android:name=".bliss.identicons.IdenticonRemovalService"
+        <service android:name=".razer.identicons.IdenticonRemovalService"
                  android:exported="false" />
 
-        <activity android:name=".bliss.navbar.NavbarTabHostFragment" />
+        <activity android:name=".razer.navbar.NavbarTabHostFragment" />
 
         <activity
-            android:name="com.android.settings.bliss.CreateShortcut"
+            android:name="com.android.settings.razer.CreateShortcut"
             android:label="@string/shortcut_label"
-            android:icon="@drawable/bliss_actions">
+            android:icon="@drawable/razer_actions">
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
                 <action android:name="android.intent.action.MAIN" />
@@ -2522,20 +2522,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.settings.bliss.activities.FlushMemory"
+            android:name="com.android.settings.razer.activities.FlushMemory"
             android:label="@string/toggle_flushmemory"
-            android:icon="@drawable/bliss_flush_memory"
+            android:icon="@drawable/razer_flush_memory"
             android:theme="@android:style/Theme.Holo.Panel"
             android:excludeFromRecents="true"
             android:launchMode="singleTop" >
             <intent-filter>
-                <action android:name="com.android.settings.bliss.INTENT_FLUSHMEMORY_TOGGLE" />
+                <action android:name="com.android.settings.razer.INTENT_FLUSHMEMORY_TOGGLE" />
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.android.systemui.SHORTCUT" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.settings.bliss.activities.StartDreamActivity"
+            android:name="com.android.settings.razer.activities.StartDreamActivity"
             android:label="@string/toggle_dream"
             android:icon="@drawable/ic_sysbar_dream"
             android:theme="@android:style/Theme.Holo.Panel"
@@ -2547,40 +2547,40 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.settings.bliss.activities.RingVibToggle"
+            android:name="com.android.settings.razer.activities.RingVibToggle"
             android:label="@string/toggle_ring_vib"
             android:icon="@drawable/ic_lockscreen_vib"
             android:theme="@android:style/Theme.Holo.Panel"
             android:excludeFromRecents="true"
             android:launchMode="singleTop" >
             <intent-filter>
-                <action android:name="com.android.settings.bliss.INTENT_RING_VIB_TOGGLE" />
+                <action android:name="com.android.settings.razer.INTENT_RING_VIB_TOGGLE" />
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.android.systemui.SHORTCUT" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.settings.bliss.activities.RingSilentToggle"
+            android:name="com.android.settings.razer.activities.RingSilentToggle"
             android:label="@string/toggle_ring_silent"
             android:icon="@drawable/ic_lockscreen_silent"
             android:theme="@android:style/Theme.Holo.Panel"
             android:excludeFromRecents="true"
             android:launchMode="singleTop" >
             <intent-filter>
-                <action android:name="com.android.settings.bliss.INTENT_RING_SILENT_TOGGLE" />
+                <action android:name="com.android.settings.razer.INTENT_RING_SILENT_TOGGLE" />
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.android.systemui.SHORTCUT" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.settings.bliss.activities.RingVibSilentToggle"
+            android:name="com.android.settings.razer.activities.RingVibSilentToggle"
             android:label="@string/toggle_ring_vib_silent"
             android:icon="@drawable/ic_lockscreen_soundon"
             android:theme="@android:style/Theme.Holo.Panel"
             android:excludeFromRecents="true"
             android:launchMode="singleTop" >
             <intent-filter>
-                <action android:name="com.android.settings.bliss.INTENT_RING_VIB_SILENT_TOGGLE" />
+                <action android:name="com.android.settings.razer.INTENT_RING_VIB_SILENT_TOGGLE" />
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.android.systemui.SHORTCUT" />
             </intent-filter>

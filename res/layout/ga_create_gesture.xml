@@ -44,7 +44,7 @@
 
     </LinearLayout>
 
-    <com.android.settings.bliss.gestureanywhere.GestureAnywhereGestureOverlayView
+    <com.android.settings.razer.gestureanywhere.GestureAnywhereGestureOverlayView
         android:id="@+id/gestures_overlay"
         android:layout_width="match_parent"
         android:layout_height="0dip"

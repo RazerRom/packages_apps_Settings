@@ -15,8 +15,8 @@
 -->
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/palette_bliss"
-        android:title="@string/palette_bliss_title"
+    <item android:id="@+id/palette_razer"
+        android:title="@string/palette_razer_title"
         />
     <item android:id="@+id/palette_material"
         android:title="@string/palette_material_title"

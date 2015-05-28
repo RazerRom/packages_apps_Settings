@@ -65,7 +65,7 @@
                         android:defaultValue="false"
                         android:disableDependentsState="true" />
 
-                    <com.android.settings.bliss.SeekBarPreference
+                    <com.android.settings.razer.SeekBarPreference
                         android:key="doze_brightness"
                         android:title="@string/doze_brightness_title"
                         android:max="100"

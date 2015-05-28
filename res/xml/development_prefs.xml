@@ -40,7 +40,7 @@
     <PreferenceScreen
         android:key="hfm_settings"
         android:title="@string/hfm_pref_screen_title"
-        android:fragment="com.android.settings.bliss.hfm.HfmSettings" />            
+        android:fragment="com.android.settings.razer.hfm.HfmSettings" />            
 
     <PreferenceScreen	
         android:id="@+id/wakelock_blocker"
@@ -203,7 +203,7 @@
             android:title="@string/wifi_allow_scan_with_traffic"
             android:summary="@string/wifi_allow_scan_with_traffic_summary"/>
 
-        <com.android.settings.bliss.GlobalSettingSwitchPreference
+        <com.android.settings.razer.GlobalSettingSwitchPreference
             android:key="captive_portal_detection_enabled "
             android:title="@string/captive_portal_detection"
             android:summary="@string/captive_portal_detection_summary" />

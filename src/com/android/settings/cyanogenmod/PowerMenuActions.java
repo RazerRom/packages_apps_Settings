@@ -42,7 +42,7 @@ import com.android.settings.Utils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.util.cm.PowerMenuConstants;
-import com.android.settings.bliss.NumberPickerPreference;
+import com.android.settings.razer.NumberPickerPreference;
 
 import static com.android.internal.util.cm.PowerMenuConstants.*;
 

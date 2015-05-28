@@ -55,13 +55,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     private static final String TAG = "StatusBar";
 
-    private static final String KEY_BLISS_LOGO_COLOR = "status_bar_bliss_logo_color";
+    private static final String KEY_RAZER_LOGO_COLOR = "status_bar_razer_logo_color";
     private static final String KEY_STATUS_BAR_GREETING = "status_bar_greeting";
     private static final String KEY_STATUS_BAR_GREETING_TIMEOUT = "status_bar_greeting_timeout";
     private static final String KEY_CARRIERLABEL_PREFERENCE = "carrier_options";
     private static final String SHOW_FOURG = "show_fourg";
 
-    private ColorPickerPreference mBlissLogoColor;
+    private ColorPickerPreference mRazerLogoColor;
     private SwitchPreference mStatusBarGreeting;
     private SeekBarPreferenceCham mStatusBarGreetingTimeout;
     private SwitchPreference mShowFourG;
@@ -80,15 +80,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             removePreference(Settings.System.STATUS_BAR_MSIM_SHOW_EMPTY_ICONS);
         }
 
-        // Bliss logo color
-        mBlissLogoColor =
-            (ColorPickerPreference) prefSet.findPreference(KEY_BLISS_LOGO_COLOR);
-        mBlissLogoColor.setOnPreferenceChangeListener(this);
+        // Razer logo color
+        mRazerLogoColor =
+            (ColorPickerPreference) prefSet.findPreference(KEY_RAZER_LOGO_COLOR);
+        mRazerLogoColor.setOnPreferenceChangeListener(this);
         int intColor = Settings.System.getInt(resolver,
-            Settings.System.STATUS_BAR_BLISS_LOGO_COLOR, 0xffffffff);
+            Settings.System.STATUS_BAR_RAZER_LOGO_COLOR, 0xffffffff);
         String hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mBlissLogoColor.setSummary(hexColor);
-        mBlissLogoColor.setNewPreviewColor(intColor);
+        mRazerLogoColor.setSummary(hexColor);
+        mRazerLogoColor.setNewPreviewColor(intColor);
 
         // Greeting
         mStatusBarGreeting =
@@ -134,13 +134,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mBlissLogoColor) {
+        if (preference == mRazerLogoColor) {
             String hex = ColorPickerPreference.convertToARGB(
                 Integer.valueOf(String.valueOf(newValue)));
             preference.setSummary(hex);
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(resolver,
-                Settings.System.STATUS_BAR_BLISS_LOGO_COLOR,
+                Settings.System.STATUS_BAR_RAZER_LOGO_COLOR,
                 intHex);
             return true;
         } else if (preference == mStatusBarGreetingTimeout) {

@@ -58,7 +58,7 @@
         <!-- Live volume steps -->
         <PreferenceScreen
                 android:key="volume_steps_settings"
-                android:fragment="com.android.settings.bliss.VolumeSteps"
+                android:fragment="com.android.settings.razer.VolumeSteps"
                 android:title="@string/volume_steps_title" />
 
     </PreferenceCategory>
@@ -136,7 +136,7 @@
                 android:key="advanced_sound_settings"
                 android:title="@string/advanced_sound_title"
                 android:persistent="false"
-                android:fragment="com.android.settings.bliss.SoundSettings" />
+                android:fragment="com.android.settings.razer.SoundSettings" />
     </PreferenceCategory>
 
     <PreferenceCategory

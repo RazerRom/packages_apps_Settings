@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 Slimroms
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License a
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/interface_settings_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <!-- Button Settings -->
+    <PreferenceScreen
+        android:id="@+id/button_settings"
+        android:title="@string/button_pref_title"
+        android:fragment="com.android.settings.ButtonSettings"
+        android:icon="@drawable/ic_settings_buttons" />
+
+    <!-- Custom Navbar -->
+    <PreferenceScreen
+        android:key="navbar"
+        android:title="@string/razer_navbar_title"
+        android:fragment="com.android.settings.razer.NavBarSettings"
+        android:icon="@drawable/ic_navbar_layout"
+        settings:advanced="true" />
+
+    <!-- App circle bar -->
+    <PreferenceScreen
+        android:key="app_circle_bar"
+        android:fragment="com.android.settings.razer.AppCircleBar"
+        android:title="@string/app_circle_bar_title"
+        android:icon="@drawable/ic_appcirclebar"
+        settings:advanced="true" />
+
+    <!-- App sidebar -->
+    <PreferenceScreen
+        android:key="app_sidebar"
+        android:fragment="com.android.settings.razer.AppSidebar"
+        android:title="@string/app_sidebar_title"
+        android:icon="@drawable/ic_settings_sidebar"
+        settings:advanced="true" />
+
+    <!-- Gesture anywhere -->
+    <PreferenceScreen
+        android:key="gesture_anywhere"
+        android:fragment="com.android.settings.razer.gestureanywhere.GestureAnywhereSettings"
+        android:title="@string/gesture_anywhere_title"
+        android:icon="@drawable/ic_settings_gestures"
+        settings:advanced="true" />
+
+    <!-- Navigation Ring -->
+    <PreferenceScreen
+        android:key="navigation_bar_ring"
+        android:fragment="com.android.settings.cyanogenmod.NavRing"
+        android:title="@string/navigation_ring_title"
+        android:icon="@drawable/ic_nav_ring" />
+
+    <PreferenceScreen
+        android:key="pie_settings"
+        android:fragment="com.android.settings.razer.PieControl"
+        android:title="@string/pie_control_title"
+	android:icon="@drawable/ic_settings_pie" />
+
+</PreferenceScreen>

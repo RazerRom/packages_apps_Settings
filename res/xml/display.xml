@@ -21,7 +21,7 @@
     <PreferenceScreen
         android:key="smart_cover"
         android:title="@string/smart_cover_title"
-        android:fragment="com.android.settings.bliss.SmartCoverSettings" />
+        android:fragment="com.android.settings.razer.SmartCoverSettings" />
 
     <PreferenceCategory
         android:key="display"
@@ -67,7 +67,7 @@
         <PreferenceScreen
                 android:key="doze_fragment"
                 android:title="@string/doze_title"
-                android:fragment="com.android.settings.bliss.AmbientSettings"
+                android:fragment="com.android.settings.razer.AmbientSettings"
                 settings:advanced="true" />
 
         <!-- Doze // Ambient display -->
@@ -169,7 +169,7 @@
         <!-- Display -->
         <PreferenceScreen
                 android:key="display_settings"
-                android:fragment="com.android.settings.bliss.DisplaySettings"
+                android:fragment="com.android.settings.razer.DisplaySettings"
                 android:title="@string/advanced_display_settings_title" />
 
     </PreferenceCategory>

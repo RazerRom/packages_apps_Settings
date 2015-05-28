@@ -87,7 +87,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_MOD_BUILD_TYPE = "build_type";
-    private static final String KEY_BLISS_SHARE = "share";
+    private static final String KEY_RAZER_SHARE = "share";
     private static final String KEY_SM_AND = "sm_android";
     private static final String KEY_SM_KERNEL = "sm_kernel";
     private static final String KEY_SM_FLAGS = "sm_flags";
@@ -120,7 +120,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
-        setValueSummary(KEY_MOD_BUILD_TYPE, "ro.bliss.display.buildtype");
+        setValueSummary(KEY_MOD_BUILD_TYPE, "ro.razer.display.buildtype");
         findPreference(KEY_MOD_BUILD_TYPE).setEnabled(true);
         findPreference(KEY_BUILD_VERSION).setEnabled(true);
         findPreference(KEY_SM_AND).setEnabled(true);
@@ -130,7 +130,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_SM_KERNEL, "ro.sm.kernel");
         setValueSummary(KEY_SM_FLAGS, "ro.sm.flags");
         setValueSummary(KEY_MOD_VERSION, "ro.modversion");
-        setValueSummary(KEY_BUILD_VERSION, "ro.bliss.version");
+        setValueSummary(KEY_BUILD_VERSION, "ro.razer.version");
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -295,7 +295,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             } catch (Exception e) {
                 Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
             }
-        } else if (preference.getKey().equals(KEY_BLISS_SHARE)) {
+        } else if (preference.getKey().equals(KEY_razer_SHARE)) {
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_SEND);
             intent.setType("text/plain");

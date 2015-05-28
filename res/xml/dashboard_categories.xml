@@ -119,8 +119,8 @@
         <!-- Interface -->
         <dashboard-tile
                 android:id="@+id/interface_settings"
-                android:icon="@drawable/ic_bliss_interface"
-                android:fragment="com.android.settings.bliss.InterfaceSettings"
+                android:icon="@drawable/ic_razer_interface_teal"
+                android:fragment="com.android.settings.razer.InterfaceSettings"
                 android:title="@string/interface_settings_title"
                 />
 
@@ -129,7 +129,7 @@
            android:id="@+id/audiofx_settings"
            android:title="@string/audiofx_settings_title"
            android:summary="@string/audiofx_summary"
-           android:icon="@drawable/ic_bliss_equalizer" >
+           android:icon="@drawable/ic_razer_equalizer" >
            <intent
               android:action="android.intent.action.MAIN"
               android:targetClass="org.cyanogenmod.audiofx.ActivityMusic"
@@ -141,7 +141,7 @@
            android:id="@+id/viper_settings"
            android:title="@string/viper_settings_title"
            android:summary="@string/viper_summary"
-           android:icon="@drawable/ic_bliss_equalizer" >
+           android:icon="@drawable/ic_razer_equalizer" >
            <intent
               android:action="android.intent.action.MAIN"
               android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android"

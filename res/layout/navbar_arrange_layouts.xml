@@ -27,10 +27,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-    <com.android.settings.bliss.widgets.CategorySeparator
+    <com.android.settings.razer.widgets.CategorySeparator
             style="@style/defaultSize"/>
 
-    <com.android.settings.bliss.util.DragSortListView
+    <com.android.settings.razer.util.DragSortListView
             android:id="@android:id/list"
             android:layout_width="match_parent"
             android:layout_height="0dp"

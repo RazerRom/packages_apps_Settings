@@ -19,7 +19,7 @@
 -keep class com.android.settings.privacyguard.*
 -keep class com.android.settings.voicewakeup.*
 
--keep class com.android.settings.bliss.**
+-keep class com.android.settings.razer.**
 
 # These would be stripped out since they are being created with reflection
 -keep class com.android.settings.dashboard.GenericSwitchToggle { *; }

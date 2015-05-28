@@ -18,8 +18,8 @@
     <item android:id="@+id/reset_android"
         android:title="@string/reset_android_title"
         />
-    <item android:id="@+id/reset_bliss"
-        android:title="@string/reset_bliss_title"
+    <item android:id="@+id/reset_razer"
+        android:title="@string/reset_razer_title"
         />
 </menu>
 

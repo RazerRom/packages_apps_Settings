@@ -46,7 +46,7 @@ import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 
 import com.android.internal.util.cm.ScreenType;
-import com.android.internal.util.bliss.blissUtils;
+import com.android.internal.util.razer.razerUtils;
 import com.android.settings.cyanogenmod.ButtonBacklightBrightness;
 
 import com.android.settings.search.BaseSearchIndexProvider;

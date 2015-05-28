@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 BOSP
+<!-- Copyright (C) 2015 The RazerRom Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@
     
     <PreferenceScreen
         android:key="interface_animation_scroll"
-        android:fragment="com.android.settings.bliss.KeyboardAnimationInterfaceSettings"
+        android:fragment="com.android.settings.razer.KeyboardAnimationInterfaceSettings"
         android:title="@string/ime_animation_title"
         android:summary="@string/ime_animation_summary" />    
 
@@ -34,13 +34,13 @@
 		   
     <PreferenceScreen
         android:id="@+id/listview"
-        android:fragment="com.android.settings.bliss.Listview"
+        android:fragment="com.android.settings.razer.Listview"
         android:title="@string/listview_category" />
 		   		   		
     <PreferenceScreen
         android:id="@+id/animations"
         android:title="@string/title_animation_controls"
-        android:fragment="com.android.settings.bliss.fragments.AnimationControls" />
+        android:fragment="com.android.settings.razer.fragments.AnimationControls" />
                    
     <ListPreference
         android:key="pref_scrollingcache"
@@ -52,7 +52,7 @@
         
     <PreferenceScreen
         android:key="interface_animation_scroll"
-        android:fragment="com.android.settings.bliss.ScrollAnimationInterfaceSettings"
+        android:fragment="com.android.settings.razer.ScrollAnimationInterfaceSettings"
         android:title="@string/scrolling_title"
         android:summary="@string/scrolling_summary" />
 
@@ -60,6 +60,6 @@
     <PreferenceScreen
         android:id="@+id/identicons"
         android:title="@string/identicons_title"
-        android:fragment="com.android.settings.bliss.identicons.IdenticonsSettings" />
+        android:fragment="com.android.settings.razer.identicons.IdenticonsSettings" />
 	
 </PreferenceScreen>

@@ -76,14 +76,14 @@ public class ColorPickerDialog extends Dialog implements
 
     private final int mInitialColor;
     private final int mAndroidColor;
-    private final int mBlissColor;
+    private final int mRazerColor;
     private int mNewColorValue;
     private boolean mIsResetButtonEnabled = false;
 
-    private static final int PALETTE_BLISS  = 0;
+    private static final int PALETTE_RAZER  = 0;
     private static final int PALETTE_MATERIAL = 1;
     private static final int PALETTE_RGB      = 2;
-    private int mPalette = PALETTE_BLISS;
+    private int mPalette = PALETTE_RAZER;
 
     private static final int[][] mPaletteColors = {
             { Color.BLACK, 0xff1b1f23, 0xff33b5e5, 0xff009688,
@@ -101,12 +101,12 @@ public class ColorPickerDialog extends Dialog implements
     }
 
     public ColorPickerDialog(Context context, int theme, int initialColor,
-            int androidColor, int blissColor) {
+            int androidColor, int razerColor) {
         super(context, theme);
         mInitialColor = initialColor;
         mAndroidColor = androidColor;
-        mBlissColor = blissColor;
-        if (mAndroidColor != 0x00000000 && mBlissColor != 0x00000000) {
+        mRazerColor = razerColor;
+        if (mAndroidColor != 0x00000000 && mRazerColor != 0x00000000) {
             mIsResetButtonEnabled = true;
         }
 
@@ -274,8 +274,8 @@ public class ColorPickerDialog extends Dialog implements
 
     @Override
     public boolean onMenuItemClick(MenuItem item) {
-        if (item.getItemId() == R.id.palette_bliss) {
-            mPalette = PALETTE_BLISS;
+        if (item.getItemId() == R.id.palette_razer) {
+            mPalette = PALETTE_RAZER;
             mColorTransitionAnimator.start();
             return true;
         } else if (item.getItemId() == R.id.palette_material) {
@@ -289,8 +289,8 @@ public class ColorPickerDialog extends Dialog implements
         } else if (item.getItemId() == R.id.reset_android) {
             mColorPicker.setColor(mAndroidColor, true);
             return true;
-        } else if (item.getItemId() == R.id.reset_bliss) {
-            mColorPicker.setColor(mBlissColor, true);
+        } else if (item.getItemId() == R.id.reset_razer) {
+            mColorPicker.setColor(mRazerColor, true);
             return true;
         }
         return false;

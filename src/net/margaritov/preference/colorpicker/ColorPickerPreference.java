@@ -44,7 +44,7 @@ public class ColorPickerPreference extends Preference implements
     LinearLayout widgetFrameView;
     int mDefaultValue = Color.BLACK;
     int mAndroidColor = 0x00000000;
-    int mBlissColor = mAndroidColor;
+    int mRazerColor = mAndroidColor;
     private int mValue = Color.BLACK;
     private float mDensity = 0;
     private boolean mAlphaSliderEnabled = true;
@@ -187,7 +187,7 @@ public class ColorPickerPreference extends Preference implements
     public boolean onPreferenceClick(Preference preference) {
         ColorPickerDialog picker = new ColorPickerDialog(
                 getContext(), R.style.Theme_ColorPickerDialog, getValue(),
-                mAndroidColor, mBlissColor);
+                mAndroidColor, mRazerColor);
         picker.setOnColorChangedListener(this);
         if (mAlphaSliderEnabled) {
             picker.setAlphaSliderVisible(true);
@@ -206,9 +206,9 @@ public class ColorPickerPreference extends Preference implements
         mAlphaSliderEnabled = enable;
     }
 
-    public void setDefaultColors(int androidColor, int blissColor) {
+    public void setDefaultColors(int androidColor, int razerColor) {
         mAndroidColor = androidColor;
-        mBlissColor = blissColor;
+        mRazerColor = razerColor;
     }
 
     /**

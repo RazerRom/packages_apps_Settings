@@ -43,7 +43,7 @@
         android:paddingLeft="12dp"
         />
 
-    <com.android.settings.bliss.util.DragGripView
+    <com.android.settings.razer.util.DragGripView
         android:id="@+id/drag_handle"
         android:layout_width="32dp"
         android:layout_height="@dimen/list_toggle_height"
