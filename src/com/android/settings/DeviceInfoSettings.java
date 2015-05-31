@@ -295,7 +295,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             } catch (Exception e) {
                 Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
             }
-        } else if (preference.getKey().equals(KEY_razer_SHARE)) {
+        } else if (preference.getKey().equals(KEY_RAZER_SHARE)) {
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_SEND);
             intent.setType("text/plain");

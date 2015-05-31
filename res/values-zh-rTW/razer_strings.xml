@@ -69,7 +69,7 @@
     <!-- About phone screen, Razer version -->
     <string name="razer_mod_version">Razer版本</string>
     <string name="mod_build_version">Razer編譯</string>
-    <string name="mod_version_default">未知</string>h
+    <string name="mod_version_default">未知</string>
     <!--Embedded AudioFX-->
     <string name="audiofx_settings_title">均衡器</string>
     <string name="audiofx_summary">鏈接AudioFX</string>
