@@ -129,7 +129,7 @@
            android:id="@+id/audiofx_settings"
            android:title="@string/audiofx_settings_title"
            android:summary="@string/audiofx_summary"
-           android:icon="@drawable/ic_razer_equalizer" >
+           android:icon="@drawable/ic_razer_equalizer_teal" >
            <intent
               android:action="android.intent.action.MAIN"
               android:targetClass="org.cyanogenmod.audiofx.ActivityMusic"
