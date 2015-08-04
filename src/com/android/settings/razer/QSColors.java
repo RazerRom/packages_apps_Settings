@@ -243,7 +243,6 @@ public class QSColors extends SettingsPreferenceFragment implements
                                     RAZER_BLUE);
                             Settings.System.putInt(getOwner().mResolver,
                                     Settings.System.QS_TRANSPARENT_SHADE, 0);
-                                    RAZER_BLUE);
                             getOwner().refreshSettings();
                         }
                     })
