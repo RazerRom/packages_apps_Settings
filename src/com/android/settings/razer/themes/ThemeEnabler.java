@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.bliss.themes;
+package com.android.settings.razer.themes;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -22,8 +22,8 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
-import com.android.internal.util.bliss.ActionConstants;
-import com.android.internal.util.bliss.Action;
+import com.android.internal.util.razer.ActionConstants;
+import com.android.internal.util.razer.Action;
 
 import com.android.settings.R;
 

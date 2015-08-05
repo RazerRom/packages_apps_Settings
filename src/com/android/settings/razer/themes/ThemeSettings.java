@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.bliss.themes;
+package com.android.settings.razer.themes;
 
 import android.app.ActionBar;
 import android.app.Activity;

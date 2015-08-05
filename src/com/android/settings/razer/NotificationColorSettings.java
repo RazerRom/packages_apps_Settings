@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.bliss;
+package com.android.settings.razer;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -61,7 +61,7 @@ public class NotificationColorSettings extends SettingsPreferenceFragment implem
     private static final String PREF_CLEAR_ALL_ICON_COLOR =
             "notification_drawer_clear_all_icon_color";
 
-    private static final int BLISS_BLUE_GREY = 0xff1b1f23;
+    private static final int RAZER_BLUE_GREY = 0xff1b1f23;
     private static final int SYSTEMUI_SECONDARY = 0xff384248;
     private static final int WHITE = 0xffffffff;
     private static final int BLACK = 0xff000000;
@@ -130,7 +130,7 @@ public class NotificationColorSettings extends SettingsPreferenceFragment implem
         mBgColor.setNewPreviewColor(intColor);
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mBgColor.setSummary(hexColor);
-        mBgColor.setDefaultColors(BLISS_BLUE_GREY, BLISS_BLUE_GREY);
+        mBgColor.setDefaultColors(RAZER_BLUE_GREY, RAZER_BLUE_GREY);
         mBgColor.setOnPreferenceChangeListener(this);
 
         mBgGutsColor =
@@ -346,7 +346,7 @@ public class NotificationColorSettings extends SettingsPreferenceFragment implem
                             getOwner().refreshSettings();
                         }
                     })
-                    .setPositiveButton(R.string.dlg_reset_bliss,
+                    .setPositiveButton(R.string.dlg_reset_razer,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             Settings.System.putInt(getOwner().mResolver,

@@ -112,7 +112,7 @@
         <dashboard-tile
                 android:id="@+id/theme_settings"
                 android:icon="@drawable/ic_settings_theme"
-                android:fragment="com.android.settings.bliss.themes.ThemeSettings"
+                android:fragment="com.android.settings.razer.themes.ThemeSettings"
                 android:title="@string/theme_settings_title"
                 />
 

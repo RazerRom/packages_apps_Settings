@@ -101,7 +101,7 @@
         <PreferenceScreen
                 android:id="@+id/notification_colors"
                 android:title="@string/cat_colors_title"
-                android:fragment="com.android.settings.bliss.NotificationColorSettings" />
+                android:fragment="com.android.settings.razer.NotificationColorSettings" />
 
         <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
             android:key="qs_show_brightness_slider"
