@@ -1996,6 +1996,20 @@
                 android:resource="@id/display_and_lights_settings" />
         </activity>
 
+        <!-- Razer Main Settings -->
+        <activity android:name="Settings$RazerInterfaceSettingsActivity"
+            android:label="@string/interface_settings_title"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.razer.InterfaceSettings" />
+        </activity>
+
+        <activity
+             android:name=".bliss.InterfaceSettings" />
 	
         <!-- Navigation options -->
         <activity android:name="Settings$NavBarActivity"

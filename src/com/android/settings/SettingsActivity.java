@@ -84,6 +84,7 @@ import com.android.settings.razer.AppCircleBar;
 import com.android.settings.razer.AppSidebar;
 import com.android.settings.razer.gestureanywhere.GestureAnywhereSettings;
 import com.android.settings.razer.HeadsUpSettings;
+import com.android.settings.razer.InterfaceSettings;
 import com.android.settings.ButtonSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.dashboard.DashboardCategory;
@@ -343,7 +344,8 @@ public class SettingsActivity extends Activity
             GestureAnywhereSettings.class.getName(),
             WakeLockBlocker.class.getName(),
             AmbientSettings.class.getName(),
-            AppSidebar.class.getName()
+            AppSidebar.class.getName(),
+            InterfaceSettings.class.getName()
     };
 
 
