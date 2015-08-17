@@ -32,6 +32,17 @@ import com.android.settings.SecuritySettings;
 import com.android.settings.WirelessSettings;
 import com.android.settings.accessibility.AccessibilitySettings;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.razer.AnimationSettings;
+import com.android.settings.razer.BatteryStyle;
+import com.android.settings.razer.RazerDisplaySettings;
+import com.android.settings.razer.InterfaceSettings;
+import com.android.settings.razer.LockScreenSettings;
+import com.android.settings.razer.NavbarSettings;
+import com.android.settings.razer.NavigationSettings;
+import com.android.settings.razer.RazerSoundSettings;
+import com.android.settings.razer.StatusBarClockStyle;
+import com.android.settings.razer.StatusBarBatteryStatusSettings;
+import com.android.settings.razer.RecentsSettings;
 import com.android.settings.cyanogenmod.NotificationDrawerSettings;
 import com.android.settings.cyanogenmod.StatusBarSettings;
 import com.android.settings.deviceinfo.Memory;
@@ -39,7 +50,6 @@ import com.android.settings.deviceinfo.UsbSettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.inputmethod.InputMethodAndLanguageSettings;
 import com.android.settings.location.LocationSettings;
-import com.android.settings.lockscreen.LockScreenSettings;
 import com.android.settings.net.DataUsageMeteredSettings;
 import com.android.settings.notification.NotificationManagerSettings;
 import com.android.settings.SoundSettings;
@@ -124,9 +134,9 @@ public final class SearchIndexableResources {
         sResMap.put(LockScreenSettings.class.getName(),
                 new SearchIndexableResource(
                         Ranking.getRankForClassName(LockScreenSettings.class.getName()),
-                        NO_DATA_RES_ID,
+                        R.xml.razer_lockscreen_settings,
                         LockScreenSettings.class.getName(),
-                        R.drawable.ic_settings_security));
+                        R.drawable.ic_razer_interface));
 
         sResMap.put(HomeSettings.class.getName(),
                 new SearchIndexableResource(
@@ -310,6 +320,76 @@ public final class SearchIndexableResources {
                         NO_DATA_RES_ID,
                         AmbientSettings.class.getName(),
                         R.drawable.ic_settings_display));
+
+        sResMap.put(RecentsSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(RecentsSettings.class.getName()),
+                        R.xml.recents_settings,
+                        RecentsSettings.class.getName(),
+                        R.drawable.ic_razer_interface));
+
+        sResMap.put(NavbarSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(NavbarSettings.class.getName()),
+                        R.xml.navbar_settings,
+                        NavbarSettings.class.getName(),
+                        R.drawable.ic_razer_interface));
+
+        sResMap.put(StatusBarClockStyle.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(StatusBarClockStyle.class.getName()),
+                        R.xml.status_bar_clock_style,
+                        StatusBarClockStyle.class.getName(),
+                        R.drawable.ic_razer_interface));
+
+        sResMap.put(StatusBarBatteryStatusSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(StatusBarBatteryStatusSettings.class.getName()),
+                        R.xml.status_bar_battery_status_settings,
+                        StatusBarBatteryStatusSettings.class.getName(),
+                        R.drawable.ic_razer_interface));
+
+        sResMap.put(RazerDisplaySettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(RazerDisplaySettings.class.getName()),
+                        R.xml.razer_display_settings,
+                        RazerDisplaySettings.class.getName(),
+                        R.drawable.ic_razer_interface));
+
+        sResMap.put(BatteryStyle.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(BatteryStyle.class.getName()),
+                        R.xml.razer_battery_style,
+                        BatteryStyle.class.getName(),
+                        R.drawable.ic_razer_interface));
+
+        sResMap.put(RazerSoundSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(RazerSoundSettings.class.getName()),
+                        R.xml.razer_sound_settings,
+                        RazerSoundSettings.class.getName(),
+                        R.drawable.ic_razer_interface));
+
+        sResMap.put(NavigationSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(NavigationSettings.class.getName()),
+                        R.xml.razer_navigation_settings,
+                        NavigationSettings.class.getName(),
+                        R.drawable.ic_razer_interface));
+
+        sResMap.put(InterfaceSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(InterfaceSettings.class.getName()),
+                        R.xml.razer_interface_settings,
+                        InterfaceSettings.class.getName(),
+                        R.drawable.ic_razer_interface));
+
+        sResMap.put(AnimationSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(AnimationSettings.class.getName()),
+                        R.xml.animation_settings,
+                        AnimationSettings.class.getName(),
+                        R.drawable.ic_razer_interface));
     }
 
     private SearchIndexableResources() {

@@ -43,8 +43,6 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.util.Helpers;
 import com.android.settings.Utils;
 
@@ -172,10 +170,10 @@ public class LockScreenSettings extends SettingsPreferenceFragment
                     return result;
                 }
 
-                @Override
-                public List<String> getNonIndexableKeys(Context context) {
-                    ArrayList<String> result = new ArrayList<String>();
-                    return result;
-                }
-            };		
+        @Override
+        public List<String> getNonIndexableKeys(Context context) {
+            ArrayList<String> result = new ArrayList<String>();
+            return result;
+        }
+    };	
 }
