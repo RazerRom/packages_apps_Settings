@@ -40,6 +40,7 @@ import com.android.settings.razer.LockScreenSettings;
 import com.android.settings.razer.NavbarSettings;
 import com.android.settings.razer.NavigationSettings;
 import com.android.settings.razer.RazerSoundSettings;
+import com.android.settings.razer.SmartControl;
 import com.android.settings.razer.StatusBarClockStyle;
 import com.android.settings.razer.StatusBarBatteryStatusSettings;
 import com.android.settings.razer.RecentsSettings;
@@ -390,6 +391,13 @@ public final class SearchIndexableResources {
                         R.xml.animation_settings,
                         AnimationSettings.class.getName(),
                         R.drawable.ic_razer_interface));
+
+        sResMap.put(SmartControl.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(SmartControl.class.getName()),
+                        R.xml.razer_smartcontrol,
+                        SmartControl.class.getName(),
+                        R.drawable.ic_settings_smartcontrol));
     }
 
     private SearchIndexableResources() {
