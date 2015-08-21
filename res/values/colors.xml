@@ -7,6 +7,7 @@
 
           http://www.apache.org/licenses/LICENSE-2.0
 
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -118,9 +119,7 @@
     <color name="text_color_translucent_white">#B3FFFFFF</color>
     <color name="text_color_white">@android:color/white</color>
     <!-- Dashboard background color -->
-    <color name="dashboard_category_background_color">@drawable/dashboard_background_exposed</color>
-    <color name="dashboard_category_background_exposed">@android:color/white</color>
-    <color name="dashboard_border_color">@android:color/black</color>
+    <color name="dashboard_category_background_color">@android:color/white</color>
     <!-- Data usage chart color -->
     <color name="data_usage_stroke_color">#00000000</color>
     <color name="data_usage_fill_color">#ff009688</color>

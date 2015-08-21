@@ -5,8 +5,7 @@
 	<color name="screencolor_background">@android:color/black</color>
 	<color name="background_color_gray">@android:color/black</color>
 	<color name="background_color_white">@android:color/black</color>
-	<color name="dashboard_category_background_exposed">@android:color/black</color>
-	<color name="dashboard_border_color">@android:color/white</color> 
+	<color name="dashboard_category_background_color">@android:color/black</color> 
 	<color name="text_color_black">@android:color/white</color>
 	<color name="battery_history_chart_textcolor">@android:color/white</color>
 	<color name="data_usage_label_color">@android:color/white</color>
@@ -40,9 +39,10 @@
     <color name="setup_wizard_wifi_color_light">#ffffffff</color>
     <color name="wifi_assistant_color_accent">#ffffffff</color>
     <color name="exposed_bg_dark">#ff000000</color>
+
 	<!-- Razer Extra info -->
-		<color name="extrainfo_separator">@android:color/black</color>
-		<color name="extrainfo_cat_background">@android:color/black</color>
-		<color name="extrainfo_cat_text">@android:color/white</color>
-		<color name="extrainfo_value_text">@android:color/white</color>
+	<color name="extrainfo_separator">@android:color/black</color>
+	<color name="extrainfo_cat_background">@android:color/black</color>
+	<color name="extrainfo_cat_text">@android:color/white</color>
+	<color name="extrainfo_value_text">@android:color/white</color>
 </resources>
